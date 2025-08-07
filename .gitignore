@@ -1,0 +1,172 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+coverage/
+*.lcov
+.nyc_output
+
+# Production
+build/
+dist/
+*.tsbuildinfo
+
+# React Native
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Android
+*.apk
+*.aab
+*.hprof
+/android/app/debug
+/android/app/release
+/android/.gradle
+/android/captures
+/android/local.properties
+/android/app/.cxx/
+.gradle/
+*.iml
+
+# iOS
+/ios/Pods/
+/ios/build/
+/ios/.xcode.env.local
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Metro
+.metro-health-check*
+
+# macOS
+.DS_Store
+*.pem
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# IDEs
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Backend specific
+backend/dist/
+backend/node_modules/
+backend/.env
+backend/.env.*
+backend/logs/
+backend/*.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/lerna-debug.log*
+backend/.nyc_output
+backend/coverage/
+backend/.npm
+backend/.eslintcache
+
+# Docker
+backend/data/
+backend/mysql_data/
+backend/mongodb_data/
+backend/redis_data/
+backend/rabbitmq_data/
+backend/minio_data/
+backend/prometheus_data/
+backend/grafana_data/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+tmp/
+temp/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Bundle artifacts
+*.bundle
+*.map
+
+# Ruby / CocoaPods
+/ios/Pods/
+/vendor/bundle/
+
+# Fastlane
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+*/fastlane/test_output
+
+# Certificates
+*.pem
+*.p12
+*.cer
+*.certSigningRequest
+*.provisionprofile
+
+# Misc
+.nx/
+.turbo/
+.vercel
+.next/
+out/
+.cache/
+.parcel-cache/
+.docusaurus/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
