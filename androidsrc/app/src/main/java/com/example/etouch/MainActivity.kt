@@ -1,58 +1,60 @@
 package com.example.etouch
 
 import android.os.Bundle
-import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.etouch.databinding.ActivityMainBinding
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        setSupportActionBar(binding.appBarMain.toolbar)
-
-        binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null)
-                .setAnchorView(R.id.fab).show()
-        }
-        val drawerLayout: DrawerLayout = binding.drawerLayout
-        val navView: NavigationView = binding.navView
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
-            ), drawerLayout
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        val navController = findNavController(R.id.nav_host_fragment)
+        
         navView.setupWithNavController(navController)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
-        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+        
+        // 设置按钮点击事件
+        val fabSettings: FloatingActionButton = findViewById(R.id.fab_settings)
+        fabSettings.setOnClickListener {
+            // TODO: 打开设置页面
+            Toast.makeText(this, "打开设置", Toast.LENGTH_SHORT).show()
+        }
+        
+        // 邮箱按钮点击事件
+        val fabEmail: FloatingActionButton = findViewById(R.id.fab_email)
+        fabEmail.setOnClickListener {
+            // TODO: 打开邮箱页面
+            Toast.makeText(this, "打开邮箱", Toast.LENGTH_SHORT).show()
+        }
+        
+        // 背景音乐按钮点击事件
+        val fabMusic: FloatingActionButton = findViewById(R.id.fab_music)
+        fabMusic.setOnClickListener {
+            // TODO: 更换背景音乐
+            Toast.makeText(this, "更换背景音乐", Toast.LENGTH_SHORT).show()
+        }
+        
+        // 主页显示/隐藏按钮点击事件
+        val fabVisibility: FloatingActionButton = findViewById(R.id.fab_visibility)
+        var isHomeVisible = true
+        fabVisibility.setOnClickListener {
+            isHomeVisible = !isHomeVisible
+            val message = if (isHomeVisible) "显示主页" else "隐藏主页"
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+            // TODO: 实现主页显示/隐藏逻辑
+        }
+        
+        // 角色更换按钮点击事件
+        val fabCharacter: FloatingActionButton = findViewById(R.id.fab_character)
+        fabCharacter.setOnClickListener {
+            // TODO: 更换主页角色
+            Toast.makeText(this, "更换主页角色", Toast.LENGTH_SHORT).show()
+        }
     }
 }

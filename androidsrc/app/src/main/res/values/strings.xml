@@ -10,4 +10,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    
+    <!-- Bottom Navigation -->
+    <string name="menu_controller">控制器</string>
+    <string name="menu_story">剧情</string>
+    <string name="menu_card">卡面</string>
+    <string name="menu_resonance">共鸣</string>
 </resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- 基础信息 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基础信息"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tv_analysis_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标题: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_analysis_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="艺术家: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_analysis_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="专辑: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_analysis_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="时长: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_analysis_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="流派: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 音频特征 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="音频特征分析"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tv_analysis_bpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BPM: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_analysis_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调性: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_analysis_energy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="能量值: "
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 波形预览 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="波形预览"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E0E0E0" />
+
+</LinearLayout>

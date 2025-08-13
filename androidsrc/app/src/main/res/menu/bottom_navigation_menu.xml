@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_controller"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="@string/menu_controller" />
+    
+    <item
+        android:id="@+id/navigation_story"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="@string/menu_story" />
+    
+    <item
+        android:id="@+id/navigation_card"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="@string/menu_card" />
+    
+    <item
+        android:id="@+id/navigation_resonance"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="@string/menu_resonance" />
+</menu>

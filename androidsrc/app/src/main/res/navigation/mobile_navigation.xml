@@ -3,23 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/navigation_controller">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.etouch.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_controller"
+        android:name="com.example.etouch.ui.controller.ControllerFragment"
+        android:label="@string/menu_controller"
+        tools:layout="@layout/fragment_controller" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.etouch.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/navigation_story"
+        android:name="com.example.etouch.ui.story.StoryFragment"
+        android:label="@string/menu_story"
+        tools:layout="@layout/fragment_story" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.etouch.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/navigation_card"
+        android:name="com.example.etouch.ui.card.CardFragment"
+        android:label="@string/menu_card"
+        tools:layout="@layout/fragment_card" />
+
+    <fragment
+        android:id="@+id/navigation_resonance"
+        android:name="com.example.etouch.ui.resonance.ResonanceFragment"
+        android:label="@string/menu_resonance"
+        tools:layout="@layout/fragment_resonance" />
+
 </navigation>
